@@ -8,10 +8,12 @@ class Square:
     def __init__(self, size = 0):
         """Initializing the class
         Args:
-            size: size of the square
+            size (int): size of the square
         Raises:
             TypeError: if size is not an integer
             ValuError: if size < 0
+        Returns:
+            None
         """
 
         if not isinstance(size, int):
