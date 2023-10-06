@@ -12,7 +12,7 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
     op = sys.argv[2]
     operator = {"+": add, "-": sub, "*": mul, "/": div}
-    if op not in the list(operator.keys()):
+    if op not in list(operator.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-   print("{} {} {} = {}".format(a, op, b, operator[op](a, b)) 
+   print("{} {} {} = {}".format(a, op, b, operator[op](a, b)))
