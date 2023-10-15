@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
@@ -15,4 +14,4 @@ if __name__ == "__main__":
     if op not in list(operator.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-   print("{} {} {} = {}".format(a, op, b, operator[op](a, b)))
+    print("{0} {1} {2} = {3}".format(a, op, b, operator[op](a, b)))
