@@ -29,13 +29,13 @@ void print_python_list(PyObject *p)
 		return;
 	}
 
-	printf("[*] Size of the Python List = %d\n", size);
+	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", alloc);
 
 	for (i = 0; i < size; i++)
 	{
 		type = list->ob_item[i]->ob_type->tp_name;
-		printf("Element %ld: %s\n", i type);
+		printf("Element %ld: %s\n", i, type);
 		if (strcmp(type, "bytes") == 0)
 			print_python_bytes(list->ob_item[i]);
 		else if (strcmp(type, "float") == 0)
@@ -69,7 +69,7 @@ void print_python_bytes(PyObject *p)
 	if (((PyVarObject *)p)->ob_size >= 10)
 		size = 10;
 	else
-		size = (((PyVarObject *)p)->ob_size + 1);
+		size = ((PyVarObject *)p)->ob_size + 1;
 
 	printf("  first %ld bytes: ", size);
 	for (i = 0; i < size; i++)
