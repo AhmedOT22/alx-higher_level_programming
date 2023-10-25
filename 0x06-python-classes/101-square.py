@@ -10,9 +10,6 @@ class Square:
         Args:
             size: the size of the square
             position: coordinate of the square
-        Raises:
-            TypeError: if size is not an integer
-            ValueError: is size is less than 0
         """
 
         self.size = size
@@ -47,15 +44,11 @@ class Square:
         self.__position = value
 
     def area(self):
-        """
-        calculate the area of the square
-        Returns: the square of the size
-        """
+        """calculate the area of the square"""
         return (self.__size * self.__size)
 
     def my_print(self):
         """prints the square in position"""
-        pos = ""
         if self.size == 0:
             print("")
             return
