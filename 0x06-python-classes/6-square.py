@@ -24,7 +24,6 @@ class Square:
     @property
     def size(self):
         """retrives the size"""
-
         return self.__size
 
     @size.setter
@@ -63,8 +62,7 @@ class Square:
         calculate the area of the square
         Returns: the square of the size
         """
-
-        return (self.__size ** 2)
+        return self.__size * self.__size
 
     def pos_print(self):
         """returns the position"""
@@ -82,5 +80,5 @@ class Square:
         return pos
 
     def my_print(self):
-        """prints the square in #"""
+        """prints the square in position"""
         print(self.pos_print(), end="")
