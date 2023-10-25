@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """defines a square"""
 
 
@@ -8,8 +9,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialize the square class
         Args:
-            size: the size of the square
-            position: coordinate of the square
+            size (int): the size of the square
+            position (int, int): coordinate of the square
         """
 
         self.size = size
@@ -60,7 +61,7 @@ class Square:
             print("")
 
     def __str__(self):
-        """reprsents the printed representation of the square"""
+        """represents the printed representation of the square"""
         if self.__size != 0:
             [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
