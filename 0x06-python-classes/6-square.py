@@ -34,7 +34,7 @@ class Square:
             raise ValueError('size must be >= 0')
         self.__size = value
 
-    @propert
+    @property
     def position(self):
         """retrieves the position
         Raises:
