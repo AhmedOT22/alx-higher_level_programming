@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const cp = process.argv.length;
-console.log(cp === 2 ? 'No argument' : cp === 3 ? 'Argument found' : 'Argument found');
+const count = process.argv.length;
+console.log(count === 2 ? 'No argument' : count === 3 ? 'Argument found' : 'Argument found');
