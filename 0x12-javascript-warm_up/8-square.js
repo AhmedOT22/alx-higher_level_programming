@@ -3,9 +3,9 @@ const size = Math.floor(Number(process.argv[2]));
 if (isNaN(size)) {
   console.log('Missing size');
 } else {
-  for (let x = 0; x < size; x++) {
+  for (let r = 0; r < size; r++) {
     let row = '';
-    for (let y = 0; y < size; y++) row += 'X';
+    for (let c = 0; c < size; c++) row += 'X';
     console.log(row);
   }
 }
